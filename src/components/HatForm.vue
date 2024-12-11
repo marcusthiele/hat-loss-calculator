@@ -157,7 +157,7 @@ export default {
               5 + // Baseline risk
               this.windSpeed ** 2.25 * 0.9 + // Dominant wind effect
               this.terrainDifficulty * 0.4 + // Minor terrain effect
-              this.distractionLevel * 0.4 // Minor distraction effect
+              this.distractionLevel * 0.6 // Minor distraction effect
           ) * (1 - this.hatSecure / 20) // Hat security reduces risk
       );
       this.resultText = `Chance of losing your hat:<br> ${probability.toFixed(1)}%`;
